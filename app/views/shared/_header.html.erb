@@ -1,0 +1,28 @@
+<header>
+    <div class="header-wrapper">
+        <div class="logo-container">
+            <%= image_tag 'logo/icon.svg' %>
+        </div>
+        <nav class="dropdown-menu">
+            <input id="dropdownMenuCheck" class="dropdown-check" type="checkbox" name="menu"/>
+            <label class="dropdown-icon"for="dropdownMenuCheck"><%= render partial: 'shared/burguer_menu' %></label>
+            <ul class="submenu">
+                <div class="wrapper">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">About</a></li>
+                </div>
+            </ul>
+        </nav>
+
+
+        <nav class="inline-menu">
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Work</a>
+            <a href="#">About</a>
+            <div class="dot"></div>
+        </nav>
+    </div>
+</header>

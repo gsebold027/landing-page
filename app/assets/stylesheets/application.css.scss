@@ -1,0 +1,181 @@
+/*
+* Setup vars
+*/
+
+:root {
+    --color-royal-purple: #8243B5;
+    --color-bizantine: #B543AE;
+    --color-irresistible: #B54373;
+    --color-dark-sienna: #3A1524;
+    --color-background: #25142d;
+
+    --color-font-light-extra-weak: rgba(255, 255, 255, 0.2);
+    --color-font-light-weak: rgba(255, 255, 255, 0.6);
+    --color-font-light-strong: rgba(255, 255, 255, 0.87);
+
+    --color-font-dark-extra-weak: rgba(0, 0, 0, 0.2);
+    --color-font-dark-weak: rgba(0, 0, 0, 0.6);
+    --color-font-dark-strong: rgba(0, 0, 0, 0.87);
+
+
+    --font-small-1: 8px;
+    --font-small-2: 10px;
+    --font-small-3: 12px;
+    --font-small-4: 14px;
+
+    --font-medium-1: 16px;
+    --font-medium-2: 18px;
+    --font-medium-3: 20px;
+    --font-medium-4: 24px;
+
+    --font-big-1: 32px;
+    --font-big-2: 36px;
+    --font-big-3: 40px;
+    --font-big-4: 44px;
+
+    --padding-small: 8px;
+    --padding-medium: 16px;
+    --padding-big: 32px;
+
+    --border-radius-default: 8px;
+
+    --logo-size: 48px;
+}
+
+/*
+* Reset css
+*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
+}
+
+footer,
+nav,
+section,
+main {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+a.naked:link,
+a.naked:visited,
+a.naked:hover,
+a.naked:active {
+    text-decoration: none;
+}
+
+/*
+* Main defs
+*/
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+main {
+    min-height: calc(100vh - 267px);
+    padding: var(--padding-medium);
+    background: var(--color-background);
+}
