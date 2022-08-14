@@ -16,7 +16,7 @@ main {
 
         .scroll-bottom {
             position: absolute;
-            bottom: 64px;
+            bottom: 128px;
             color: #fff;
             animation: jump 1s linear infinite;
             cursor: pointer;
@@ -40,14 +40,14 @@ main {
 
 @keyframes jump {
     0% {
-        bottom: 68px;
+        bottom: 132px;
     }
 
     50% {
-        bottom: 60px;
+        bottom: 124px;
     }
 
     100% {
-        bottom: 68px;
+        bottom: 132px;
     }
 }
