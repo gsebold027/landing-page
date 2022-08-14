@@ -23,22 +23,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-angle-down1:before {
-  content: "\e94a";
-}
-
-.icon-arrow-down:before {
-  content: "\e900";
-}
-
-.icon-caret-down:before {
-  content: "\e901";
-}
-
-.icon-caret-down1:before {
-  content: "\e902";
-}
-
 .icon-long-arrow-down:before {
   content: "\e903";
 }
