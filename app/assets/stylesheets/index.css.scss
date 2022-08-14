@@ -1,0 +1,16 @@
+main {
+    display: grid;
+    place-items: center;
+
+    .content-wrapper {
+        padding: 0 var(--padding-medium);
+        width: clamp(200px, 100%, 1600px);
+        display: grid;
+        height: 100vh;
+        place-items: center;
+
+        img {
+            width: clamp(200px, 90%, 700px);
+        }
+    }
+}
