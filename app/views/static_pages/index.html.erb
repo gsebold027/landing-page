@@ -1,5 +1,22 @@
 <main>
-    <div class="content-wrapper">
+    <section>
         <%= image_tag 'name.svg' %>
-    </div>
+        <a href="#about" class="scroll-bottom">
+            <div id="scroll">
+                <span class="icon-long-arrow-down"></span>
+            </div>
+        </a>
+    </section>
+    <section id="about"></section>
 </main>
+
+<script>
+    //* Scroll bottom
+    const scrollBottom = document.querySelector('#scroll')
+    scrollBottom.addEventListener('click', () => {
+        window.scroll({
+            top: 500,
+            behavior: 'smooth'
+        })
+    })
+</script>

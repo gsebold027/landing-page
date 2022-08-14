@@ -122,6 +122,10 @@ main {
     display: block;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     line-height: 1;
 }
@@ -173,12 +177,4 @@ a.naked:active {
 */
 body {
     font-family: 'Manrope', sans-serif;
-    background: var(--ink-background);
 }
-
-// main {
-//     min-height: calc(100vh - 267px);
-//     background: var(--ink-background);
-//     width: 100%;
-//     display: grid;
-// }

@@ -8,7 +8,6 @@ header {
     -webkit-backdrop-filter: blur(16px);
     display: grid;
     place-items: center;
-    // background: linear-gradient(135deg, rgba(124, 67, 152, 0.3), rgba(167, 53, 104, 0.2));
     background: var(--ink-background-transparent);
     z-index: 2;
 
@@ -47,16 +46,16 @@ header {
                 background: var(--ink-red);
                 border-radius: 50%;
                 opacity: 0;
-                -webkit-transform: translateX(30px);
-                transform: translateX(30px);
+                -webkit-transform: translateX(0px);
+                transform: translateX(0px);
                 -webkit-transition: all 0.2s ease-in-out;
                 transition: all 0.2s ease-in-out;
             }
 
             a {
                 &:nth-child(1):hover~.dot {
-                    -webkit-transform: translateX(30px);
-                    transform: translateX(30px);
+                    -webkit-transform: translateX(25px);
+                    transform: translateX(25px);
                     -webkit-transition: all 0.2s ease-in-out;
                     transition: all 0.2s ease-in-out;
                     opacity: 1;

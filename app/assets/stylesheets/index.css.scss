@@ -1,16 +1,53 @@
 main {
     display: grid;
-    place-items: center;
 
-    .content-wrapper {
+    section:first-child {
         padding: 0 var(--padding-medium);
-        width: clamp(200px, 100%, 1600px);
+        width: 100%;
         display: grid;
-        height: 100vh;
+        height: calc(100vh + 24px);
         place-items: center;
+        position: fixed;
+        background: var(--ink-background);
 
         img {
             width: clamp(200px, 90%, 700px);
         }
+
+        .scroll-bottom {
+            position: absolute;
+            bottom: 64px;
+            color: #fff;
+            animation: jump 1s linear infinite;
+            cursor: pointer;
+            text-decoration: none;
+
+            span {
+                font-size: 32px;
+                text-align: center;
+            }
+        }
+    }
+
+    section:nth-child(2) {
+        background: var(--ink-dark-purple);
+        height: 100vh;
+        width: 100%;
+        margin-top: 100vh;
+        z-index: 1;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 68px;
+    }
+
+    50% {
+        bottom: 60px;
+    }
+
+    100% {
+        bottom: 68px;
     }
 }
