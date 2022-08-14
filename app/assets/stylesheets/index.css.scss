@@ -31,7 +31,7 @@ main {
 
     section:nth-child(2) {
         background: var(--ink-dark-purple);
-        height: 100vh;
+        height: calc(100vh - 267px);
         width: 100%;
         margin-top: 100vh;
         z-index: 1;
