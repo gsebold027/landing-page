@@ -3,11 +3,12 @@
 */
 
 :root {
-    --color-royal-purple: #8243B5;
-    --color-bizantine: #B543AE;
-    --color-irresistible: #B54373;
-    --color-dark-sienna: #3A1524;
-    --color-background: #25142d;
+    --ink-background: #181B23;
+    --ink-background-transparent: rgba(24, 27, 35, 0.7);
+    --ink-dark-purple: #25142d;
+    --ink-purple: #7b4397;
+    --ink-red: #ca212c;
+
 
     --color-font-light-extra-weak: rgba(255, 255, 255, 0.2);
     --color-font-light-weak: rgba(255, 255, 255, 0.6);
@@ -121,6 +122,10 @@ main {
     display: block;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     line-height: 1;
 }
@@ -172,10 +177,4 @@ a.naked:active {
 */
 body {
     font-family: 'Manrope', sans-serif;
-}
-
-main {
-    min-height: calc(100vh - 267px);
-    padding: var(--padding-medium);
-    background: var(--color-background);
 }

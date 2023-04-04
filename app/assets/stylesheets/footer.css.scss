@@ -2,7 +2,7 @@ footer {
     position: relative;
     width: 100%;
     height: calc(100px + 167px);
-    background: var(--color-background);
+    background: var(--ink-dark-purple);
     overflow: hidden;
     z-index: 0;
 
@@ -53,7 +53,7 @@ footer {
         bottom: 0;
         left: 0;
         width: 100%;
-        background: linear-gradient(#993A77, #DC2430);
+        background: linear-gradient(#933977, #CC212D);
         padding-bottom: var(--padding-big);
         z-index: 5;
         display: grid;

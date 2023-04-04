@@ -8,7 +8,7 @@ header {
     -webkit-backdrop-filter: blur(16px);
     display: grid;
     place-items: center;
-    background: linear-gradient(135deg, rgba(124, 67, 152, 0.3), rgba(167, 53, 104, 0.2));
+    background: var(--ink-background-transparent);
     z-index: 2;
 
     .header-wrapper {
@@ -21,8 +21,6 @@ header {
 
         .logo-container img {
             height: var(--logo-size);
-            position: relative;
-            z-index: 8;
         }
 
         .inline-menu {
@@ -38,26 +36,26 @@ header {
                 transition: all 0.2s ease-in-out;
 
                 &:hover {
-                    color: #C72B47;
+                    color: var(--ink-red);
                 }
             }
 
             .dot {
                 width: 6px;
                 height: 6px;
-                background: #C72B47;
+                background: var(--ink-red);
                 border-radius: 50%;
                 opacity: 0;
-                -webkit-transform: translateX(30px);
-                transform: translateX(30px);
+                -webkit-transform: translateX(0px);
+                transform: translateX(0px);
                 -webkit-transition: all 0.2s ease-in-out;
                 transition: all 0.2s ease-in-out;
             }
 
             a {
                 &:nth-child(1):hover~.dot {
-                    -webkit-transform: translateX(30px);
-                    transform: translateX(30px);
+                    -webkit-transform: translateX(25px);
+                    transform: translateX(25px);
                     -webkit-transition: all 0.2s ease-in-out;
                     transition: all 0.2s ease-in-out;
                     opacity: 1;
@@ -108,7 +106,7 @@ header {
 
             .submenu {
                 list-style-type: none;
-                background: #25142d;
+                background: linear-gradient(135deg, var(--ink-purple) 0%, #a43264 56%, var(--ink-red) 100%);
                 position: absolute;
                 top: 0;
                 left: 100%;
@@ -132,14 +130,13 @@ header {
                         color: var(--color-font-light-strong);
                         font-size: 32px;
                         border-bottom: 1px solid #fff;
-                        transition: all 0.5s ease-in;
+                        transition: all 0.2s ease-in;
 
                         &:hover,
                         &:focus,
                         &:active {
-                            color: #C72B47;
-                            border-bottom: 1px solid #C72B47;
-                            transition: all 0.5s ease-in;
+                            transform: scale(1.05);
+                            transition: all 0.2s ease-in;
                         }
                     }
                 }
